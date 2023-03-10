@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>{{getProduct().title}}</h1>
+<div mat-dialog-content>
+    <div class="row-img">
+        <img class="img" src="../../../assets/images/{{getProduct().image}}">
+    </div>
+    <div class="row-data">
+        <span>{{getProduct().description}}</span>
+    </div>
+</div>
+<div mat-dialog-actions>
+  <!-- <button mat-button mat-dialog-close color="warn">Close</button> -->
+  <!-- <button mat-raised-button mat-dialog-close color="primary">Close</button> -->
+  <!-- <button mat-raised-button mat-dialog-close cdkFocusInitial color="accent">Add</button> -->
+  <button mat-raised-button color="primary" (click)="closeDialog()">Close</button>
+  <button mat-raised-button color="accent" (click)="addProductToChart()">Add</button>
+</div>

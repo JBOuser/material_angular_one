@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row" *ngFor="let item of dress; index as i" 
+        (click)="showProduct(i)"
+    >
+        <div class="row-img">
+            <img class="img" src="../../../assets/images/{{item.image}}">
+        </div>
+        <div class="row-data">
+            <p style="font-weight: bold;">{{item.title}}</p>
+            <span>{{item.description}}</span>
+        </div>
+    </div>
+</div>

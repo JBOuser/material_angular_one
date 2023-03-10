@@ -1,0 +1,28 @@
+.container{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 1rem;
+    padding: 0.3rem;
+    margin: 0.6rem;
+    vertical-align: auto;
+}
+
+.row:hover{
+    cursor: pointer;
+}
+
+.img{
+    max-width: 150px;
+    margin: 0.6rem;
+}
+
+.row-data{
+    padding: 0.6rem;
+    padding-top: 0;
+}
